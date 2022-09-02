@@ -13,3 +13,13 @@
     font-weight: bold;
 	color: black
 }
+
+p.smallfont {
+	font-style: italic;
+	font-size:77% !important; 
+}
+
+em.normal {
+	font-style: normal !important;
+}
+
