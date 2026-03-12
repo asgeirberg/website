@@ -180,6 +180,10 @@
       display: block;
     }
 
+    .abstract + .abstract {
+      margin-top: 0.7rem;
+    }
+
     footer {
       margin-top: 4rem;
       padding-top: 1.5rem;
@@ -313,8 +317,9 @@ In this paper, I defend the intentional view of rule-following, using a game-the
 </main>
 <script>
   function toggleAbstract(btn) {
-    const abstract = btn.closest('li').querySelector('.abstract');
-    const isOpen = abstract.classList.toggle('open');
+    const abstracts = btn.closest('li').querySelectorAll('.abstract');
+    const isOpen = abstracts[0].classList.toggle('open');
+    abstracts.forEach(p => p.classList.toggle('open', isOpen));
     btn.textContent = isOpen ? 'Hide abstract' : 'Abstract';
   }
 </script>
