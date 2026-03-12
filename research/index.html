@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Research — Jane Smith</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;1,400&family=Cormorant+Garamond:wght@300&display=swap" rel="stylesheet">
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --black: #111;
+      --mid: #555;
+      --light: #999;
+      --rule: #ddd;
+      --bg: #fff;
+      --max: 640px;
+      --gap: 2.5rem;
+    }
+
+    body {
+      font-family: 'EB Garamond', Georgia, serif;
+      font-size: 1.1rem;
+      line-height: 1.7;
+      color: var(--black);
+      background: var(--bg);
+      padding: 4rem 1.5rem 6rem;
+    }
+
+    main {
+      max-width: var(--max);
+      margin: 0 auto;
+    }
+
+    header {
+      margin-bottom: 3.5rem;
+      padding-bottom: 2rem;
+      border-bottom: 1px solid var(--rule);
+    }
+
+    h1 {
+      font-family: 'EB Garamond', Georgia, serif;
+      font-weight: 400;
+      font-size: 2.4rem;
+      letter-spacing: 0.01em;
+      line-height: 1.2;
+      margin-bottom: 0.4rem;
+    }
+
+    .subtitle {
+      color: var(--mid);
+      font-style: italic;
+      font-size: 1rem;
+      margin-bottom: 1.2rem;
+    }
+
+    nav {
+      display: flex;
+      gap: 1.6rem;
+      font-size: 0.95rem;
+    }
+
+    nav a {
+      color: var(--black);
+      text-decoration: none;
+      border-bottom: 1px solid var(--black);
+      padding-bottom: 1px;
+      transition: color 0.15s, border-color 0.15s;
+    }
+
+    nav a:hover {
+      color: var(--light);
+      border-color: var(--light);
+    }
+
+    section {
+      margin-bottom: var(--gap);
+    }
+
+    h2 {
+      font-family: 'Cormorant Garamond', Georgia, serif;
+      font-weight: 300;
+      font-size: 0.8rem;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      color: #555;
+      margin-bottom: 1.4rem;
+    }
+
+    .bio p + p {
+      margin-top: 0.8rem;
+    }
+
+    .papers {
+      list-style: none;
+    }
+
+    .papers li {
+      padding: 1.2rem 0;
+      border-bottom: 1px solid var(--rule);
+    }
+
+    .papers li:first-child {
+      border-top: 1px solid var(--rule);
+    }
+
+    .papers li:last-child {
+      border-bottom: none;
+    }
+
+    .paper-title {
+      font-size: 1.05rem;
+      font-weight: 500;
+      line-height: 1.4;
+      margin-bottom: 0.2rem;
+    }
+
+    .paper-coauthors {
+      font-size: 0.9rem;
+      color: var(--mid);
+      margin-bottom: 0.2rem;
+    }
+
+    .paper-meta {
+      font-size: 0.9rem;
+      color: var(--mid);
+      font-style: italic;
+      margin-bottom: 0.5rem;
+    }
+
+    .paper-links {
+      display: flex;
+      gap: 1.2rem;
+      font-size: 0.88rem;
+      flex-wrap: wrap;
+    }
+
+    .paper-links a {
+      color: var(--black);
+      text-decoration: none;
+      border-bottom: 1px solid var(--black);
+      padding-bottom: 1px;
+      transition: color 0.15s, border-color 0.15s;
+    }
+
+    .paper-links a:hover {
+      color: var(--light);
+      border-color: var(--light);
+    }
+
+    .abstract-toggle {
+      background: none;
+      border: none;
+      padding: 0;
+      cursor: pointer;
+      font-family: inherit;
+      font-size: 0.88rem;
+      color: var(--black);
+      border-bottom: 1px solid var(--black);
+      padding-bottom: 1px;
+      transition: color 0.15s, border-color 0.15s;
+      line-height: 1;
+    }
+
+    .abstract-toggle:hover {
+      color: var(--light);
+      border-color: var(--light);
+    }
+
+    .abstract {
+      display: none;
+      margin-top: 0.9rem;
+      font-size: 0.95rem;
+      color: var(--mid);
+      line-height: 1.65;
+      max-width: 560px;
+    }
+
+    .abstract.open {
+      display: block;
+    }
+
+    footer {
+      margin-top: 4rem;
+      padding-top: 1.5rem;
+      border-top: 1px solid var(--rule);
+      font-size: 0.8rem;
+      color: var(--light);
+    }
+  </style>
+</head>
+<body>
+<main>
+
+  <header>
+<!-- HEADER -->
+    <h1>Ásgeir Berg Matthíasson</h1>
+    <p class="subtitle">Philosopher.</p>
+<!-- /HEADER -->
+    <nav>
+      <a href="../">About</a>
+      <a href="../name/">My name</a>
+      <a href="../research/">Research</a>
+      <a href="../cv/">CV</a>
+      <a href="../#contact">Contact</a>
+      <a href="../fyrirollx/"><em>fyrir öll <strong>x</strong></em></a>
+    </nav>
+  </header>
+
+  <section class="bio">
+    <h2>Research</h2>
+<!-- RESEARCH -->
+    <p>I am currently running a research project developing a novel account of mathematical truth, funded by the Icelandic Research Fund (Rannís). The project builds on my previous work on the rule-following paradox and the philosophy of mathematics.</p>
+    <p>As a part of this project, I am also writing papers on inference, the nature of rule-following, and semantic dispositionalism.</p>
+    <p>I have a developing interest in the philosophy of artificial intelligence as well, particularly the philosophical questions raised by large language models.</p>
+<!-- /RESEARCH -->
+  </section>
+
+  <section id="research">
+    <h2>Peer-Reviewed Journal Articles</h2>
+    <ul class="papers">
+<!-- PAPERS -->
+      <li>
+        <p class="paper-title">What Is It to Follow a Rule?</p>
+        <p class="paper-meta"><em>Philosophical Inquiries</em>, forthcoming.</p>
+        <div class="paper-links">
+          <a href="https://www.asgeirberg.org/papers/what-is-it-to-follow-a-rule-abm.pdf">Preprint</a>
+          <button class="abstract-toggle" onclick="toggleAbstract(this)">Abstract</button>
+        </div>
+        <p class="abstract">What is it for an agent to follow a rule, rather than merely act in accordance with it? An intuitive and plausible answer to this question is that to follow a rule is to perform an intentional act such that S follows a rule R iff S intends to act in accordance with R and subsequently acts on that intention. This intentional ac- count of rule-following faces essentially two problems, widely seen as fatal: (1) Kripkean sceptical arguments, originally derived from Wittgenstein, suggesting that the requirements of a rule outstrip the possible content of our intention, and (2) a regress argument due to Boghossian, namely that the intentional view re- quires the agent to represent the conditional content of the rule in such a way that an inferential step is needed for the agent to move from the antecedent to the consequent, which, given some plausible assumptions about inference, leads to a regress.
+In this paper, I will defend the intentional view of rule-following, using a game-theoretic account of semantic content outlined in Berg (2022) and Berg (forthcoming). I will argue that by placing the agent in the basic constitutive prac- tice of using the terms that figure in an expression of the rule, we can give an answer to (1). Likewise, by positing that the agents have an in-built mental mechanism which is such that it responds to the constitutive structure of the content being represented (see Quilty-Dunn and Mandelbaum 2018) and by placing the result- ing movement of thought in a basic constitutive practice of inferring, we can avoid Boghossian’s regress.</p>
+      </li>
+
+      <li>
+        <p class="paper-title">An Objective Communitarian Account of Semantic Content</p>
+        <p class="paper-meta"><em>Ergo</em>, forthcoming.</p>
+        <div class="paper-links">
+          <a href="https://www.asgeirberg.org/papers/privilege_and_objectivity.pdf">Preprint</a>
+        </div>
+      </li>
+
+      <li>
+        <p class="paper-title">The Philosophical Prospects of Large Language Models in the Future of Mathematics</p>
+        <p class="paper-coauthors">With Fenner Stanley Tanswell.</p>
+        <p class="paper-meta"><em>Annals of Mathematics and Philosophy</em>, forthcoming.</p>
+        <div class="paper-links">
+          <a href="https://mxphi.com/wp-content/uploads/2026/02/FT.pdf">Published version</a>
+        </div>
+      </li>
+
+      <li>
+        <p class="paper-title">How the Laws of Logic Lie about Mathematical Objects</p>
+        <p class="paper-meta"><em>Synthese</em>, 2025, vol. 206, no. 201.</p>
+        <div class="paper-links">
+          <a href="https://doi.org/10.1007/s11229-025-05234-w">Published version</a>
+          <a href="https://www.asgeirberg.org/papers/how-the-laws-of-logic-lie-about-mathematical-objects.pdf">Preprint</a>
+          <button class="abstract-toggle" onclick="toggleAbstract(this)">Abstract</button>
+        </div>
+        <p class="abstract">Abstract goes here.</p>
+      </li>
+
+      <li>
+        <p class="paper-title">Problems for 'Standard' Dispositionalist Accounts of Semantic Content</p>
+        <p class="paper-meta"><em>Synthese</em>, 2025, vol. 205, no. 2.</p>
+        <div class="paper-links">
+          <a href="https://doi.org/10.1007/s11229-024-04886-4">Published version</a>
+          <a href="https://www.asgeirberg.org/papers/problems-for-semantic-dispositionalism.pdf">Preprint</a>
+        </div>
+      </li>
+
+      <li>
+        <p class="paper-title">Wittgenstein on Mathematical Facts</p>
+        <p class="paper-meta"><em>Philosophical Investigations</em>, 2024.</p>
+        <div class="paper-links">
+          <a href="https://doi.org/10.1111/phin.12438">Published version</a>
+        </div>
+      </li>
+
+      <li>
+        <p class="paper-title">Was Wittgenstein a Radical Conventionalist?</p>
+        <p class="paper-meta"><em>Synthese</em>, 2024, vol. 203, no. 37.</p>
+        <div class="paper-links">
+          <a href="https://doi.org/10.1007/s11229-023-04457-z">Published version</a>
+          <a href="https://www.asgeirberg.org/papers/radical_conventionlism-abm.pdf">Preprint</a>
+        </div>
+      </li>
+
+      <li>
+        <p class="paper-title">Rules as Constitutive Practices Defined by Correlated Equilibria</p>
+        <p class="paper-meta"><em>Inquiry</em>, 2022, vol. 65, pp. 1–35.</p>
+        <div class="paper-links">
+          <a href="https://doi.org/10.1080/0020174X.2022.2075918">Published version</a>
+          <a href="https://www.asgeirberg.org/papers/correlated-equilibria-abm.pdf">Preprint</a>
+        </div>
+      </li>
+
+      <li>
+        <p class="paper-title">Contradictions and Falling Bridges: What Was Wittgenstein's Reply to Turing?</p>
+        <p class="paper-meta"><em>British Journal for History of Philosophy</em>, 2021, vol. 29, no. 3, pp. 537–559.</p>
+        <div class="paper-links">
+          <a href="https://doi.org/10.1080/09608788.2020.1815646">Published version</a>
+          <a href="https://www.asgeirberg.org/papers/contradictions-and-falling-bridges-abm.pdf">Preprint</a>
+        </div>
+      </li>
+    <!-- /PAPERS -->
+    </ul>
+  </section>
+
+  <footer>
+    <p>Last updated March 2026</p>
+  </footer>
+
+</main>
+<script>
+  function toggleAbstract(btn) {
+    const abstract = btn.closest('li').querySelector('.abstract');
+    const isOpen = abstract.classList.toggle('open');
+    btn.textContent = isOpen ? 'Hide abstract' : 'Abstract';
+  }
+</script>
+</body>
+</html>

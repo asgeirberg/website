@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CV — Jane Smith</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;1,400&family=Cormorant+Garamond:wght@300&display=swap" rel="stylesheet">
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --black: #111;
+      --mid: #555;
+      --light: #999;
+      --rule: #ddd;
+      --bg: #fff;
+      --max: 640px;
+      --gap: 2.5rem;
+    }
+
+    body {
+      font-family: 'EB Garamond', Georgia, serif;
+      font-size: 1.1rem;
+      line-height: 1.7;
+      color: var(--black);
+      background: var(--bg);
+      padding: 4rem 1.5rem 6rem;
+    }
+
+    main {
+      max-width: var(--max);
+      margin: 0 auto;
+    }
+
+    header {
+      margin-bottom: 3.5rem;
+      padding-bottom: 2rem;
+      border-bottom: 1px solid var(--rule);
+    }
+
+    h1 {
+      font-family: 'EB Garamond', Georgia, serif;
+      font-weight: 400;
+      font-size: 2.4rem;
+      letter-spacing: 0.01em;
+      line-height: 1.2;
+      margin-bottom: 0.4rem;
+    }
+
+    .subtitle {
+      color: var(--mid);
+      font-style: italic;
+      font-size: 1rem;
+      margin-bottom: 1.2rem;
+    }
+
+    nav {
+      display: flex;
+      gap: 1.6rem;
+      font-size: 0.95rem;
+    }
+
+    nav a {
+      color: var(--black);
+      text-decoration: none;
+      border-bottom: 1px solid var(--black);
+      padding-bottom: 1px;
+      transition: color 0.15s, border-color 0.15s;
+    }
+
+    nav a:hover {
+      color: var(--light);
+      border-color: var(--light);
+    }
+
+    section {
+      margin-bottom: var(--gap);
+    }
+
+    h2 {
+      font-family: 'Cormorant Garamond', Georgia, serif;
+      font-weight: 300;
+      font-size: 0.8rem;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      color: #555;
+      margin-bottom: 1.4rem;
+    }
+
+    .cv-list {
+      list-style: none;
+    }
+
+    .cv-list li {
+      display: grid;
+      grid-template-columns: 7rem 1fr;
+      gap: 0 1.2rem;
+      padding: 0.7rem 0;
+      border-bottom: 1px solid var(--rule);
+    }
+
+    .cv-list li:first-child {
+      border-top: 1px solid var(--rule);
+    }
+
+    .cv-list.no-top-border li:first-child {
+      border-top: none;
+    }
+
+    .cv-list.no-top-border li {
+      align-items: center;
+    }
+
+    .cv-list.no-top-border .cv-detail {
+      color: #333;
+    }
+
+    .no-heading {
+      margin-top: -1.5rem;
+    }
+
+    .cv-year {
+      color: var(--light);
+      font-size: 0.9rem;
+      padding-top: 0.1rem;
+    }
+
+    .cv-body {
+      font-size: 1rem;
+      line-height: 1.5;
+    }
+
+    .cv-body .cv-role {
+      font-weight: 500;
+    }
+
+    .cv-body .cv-place {
+      color: var(--mid);
+      font-style: italic;
+      font-size: 0.9rem;
+    }
+
+    .cv-body .cv-detail {
+      color: var(--mid);
+      font-size: 0.9rem;
+    }
+
+    .pub-list {
+      list-style: none;
+    }
+
+    .pub-list li {
+      padding: 0.9rem 0;
+      border-bottom: 1px solid var(--rule);
+      font-size: 1rem;
+      line-height: 1.55;
+    }
+
+    .pub-list li:first-child {
+      border-top: 1px solid var(--rule);
+    }
+
+    .pub-title {
+      font-weight: 500;
+    }
+
+    .pub-meta {
+      color: var(--mid);
+      font-style: italic;
+      font-size: 0.9rem;
+    }
+
+    footer {
+      margin-top: 4rem;
+      padding-top: 1.5rem;
+      border-top: 1px solid var(--rule);
+      font-size: 0.8rem;
+      color: var(--light);
+    }
+  </style>
+</head>
+<body>
+<main>
+
+  <header>
+<!-- HEADER -->
+    <h1>Ásgeir Berg Matthíasson</h1>
+    <p class="subtitle">Philosopher.</p>
+<!-- /HEADER -->
+    <nav>
+      <a href="../">About</a>
+      <a href="../name/">My name</a>
+      <a href="../#research">Research</a>
+      <a href="../cv/">CV</a>
+      <a href="../#contact">Contact</a>
+      <a href="../fyrirollx/"><em>fyrir öll <strong>x</strong></em></a>
+    </nav>
+  </header>
+
+  <section class="no-heading">
+    <ul class="cv-list no-top-border">
+<!-- FIELDS -->
+      <li>
+        <span class="cv-year">Areas of Specialisation</span>
+        <div class="cv-body"><p class="cv-detail">Philosophy of mathematics, philosophy of logic,<br>Wittgenstein, the rule-following paradox.</p></div>
+      </li>
+      <li>
+        <span class="cv-year">Areas of Competence</span>
+        <div class="cv-body"><p class="cv-detail">Metaphysics, logic, philosophy of AI,<br>history of analytic philosophy.</p></div>
+      </li>
+<!-- /FIELDS -->
+    </ul>
+  </section>
+
+  <section>
+    <h2>Academic Positions</h2>
+    <ul class="cv-list">
+<!-- POSITIONS -->
+      <li>
+        <span class="cv-year">2022–</span>
+        <div class="cv-body">
+          <p class="cv-role">Postdoctoral Research Fellow</p>
+          <p class="cv-place">Institute of Philosophy, University of Iceland</p>
+        </div>
+      </li>
+      <li>
+        <span class="cv-year">2021–2022</span>
+        <div class="cv-body">
+          <p class="cv-role">Adjunct Lecturer</p>
+          <p class="cv-place">University of Iceland</p>
+        </div>
+      </li>
+      <li>
+        <span class="cv-year">2020-2021</span>
+        <div class="cv-body">
+          <p class="cv-role">Sessional Instructor</p>
+          <p class="cv-place">University of Iceland</p>
+        </div>
+      </li>
+      <li>
+        <span class="cv-year">2016-2019</span>
+        <div class="cv-body">
+          <p class="cv-role">Early Stage Researcher</p>
+          <p class="cv-place">University of Stirling</p>
+        </div>
+      </li>
+<!-- /POSITIONS -->
+    </ul>
+  </section>
+
+  <section>
+    <h2>Education</h2>
+    <ul class="cv-list">
+<!-- EDUCATION -->
+      <li>
+        <span class="cv-year">2020</span>
+        <div class="cv-body">
+          <p class="cv-role">PhD in Philosophy</p>
+          <p class="cv-place">University of St Andrews and University of Stirling</p>
+          <p class="cv-detail">Dissertation: <em>A Defense of Wittgenstein's Radical Conventionalism'</em></p>
+        </div>
+      </li>
+      <li>
+        <span class="cv-year">2015</span>
+        <div class="cv-body">
+          <p class="cv-role">MLitt in Philosophy</p>
+          <p class="cv-place">University of St Andrews and University of Stirling</p>
+        </div>
+      </li>
+      <li>
+        <span class="cv-year">2013</span>
+        <div class="cv-body">
+          <p class="cv-role">MSc in Logic</p>
+          <p class="cv-place">University of Amsterdam</p>
+        </div>
+      </li>
+<!-- /EDUCATION -->
+    </ul>
+  </section>
+
+  <section>
+    <h2>Publications</h2>
+    <ul class="pub-list">
+<!-- PUBLICATIONS -->
+      <li>
+        <p class="pub-title">What Is It to Follow a Rule?</p>
+        <p class="pub-meta"><em>Philosophical Inquiries</em>, forthcoming.</p>
+      </li>
+      <li>
+        <p class="pub-title">An Objective Communitarian Account of Semantic Content</p>
+        <p class="pub-meta"><em>Ergo</em>, forthcoming.</p>
+      </li>
+      <li>
+        <p class="pub-title">The Philosophical Prospects of Large Language Models in the Future of Mathematics</p>
+        <p class="pub-meta">With Fenner Stanley Tanswell.</p>
+        <p class="pub-meta"><em>Annals of Mathematics and Philosophy</em>, forthcoming.</p>
+      </li>
+      <li>
+        <p class="pub-title">How the Laws of Logic Lie about Mathematical Objects</p>
+        <p class="pub-meta"><em>Synthese</em>, 2025, vol. 206, no. 201.</p>
+      </li>
+      <li>
+        <p class="pub-title">Problems for 'Standard' Dispositionalist Accounts of Semantic Content</p>
+        <p class="pub-meta"><em>Synthese</em>, 2025, vol. 205, no. 2.</p>
+      </li>
+      <li>
+        <p class="pub-title">Wittgenstein on Mathematical Facts</p>
+        <p class="pub-meta"><em>Philosophical Investigations</em>, 2024.</p>
+      </li>
+      <li>
+        <p class="pub-title">Was Wittgenstein a Radical Conventionalist?</p>
+        <p class="pub-meta"><em>Synthese</em>, 2024, vol. 203, no. 37.</p>
+      </li>
+      <li>
+        <p class="pub-title">Rules as Constitutive Practices Defined by Correlated Equilibria</p>
+        <p class="pub-meta"><em>Inquiry</em>, 2022, vol. 65, pp. 1–35.</p>
+      </li>
+      <li>
+        <p class="pub-title">Contradictions and Falling Bridges: What Was Wittgenstein's Reply to Turing?</p>
+        <p class="pub-meta"><em>British Journal for History of Philosophy</em>, 2021, vol. 29, no. 3, pp. 537–559.</p>
+      </li>
+<!-- /PUBLICATIONS -->
+    </ul>
+  </section>
+
+<!-- SECTION:other_publications -->
+  <section>
+    <h2>Other Publications</h2>
+    <ul class="pub-list">
+      <li>
+        <p class="pub-title">Rannsóknir í heimspeki: Ritdómur</p>
+        <p class="pub-meta">In <em>Hugur: tímarit um heimspeki</em>, 2024.</p>
+      </li>
+      <li>
+        <p class="pub-title">fyrir öll x</p>
+        <p class="pub-meta">In <em>Icelandic version of forall x, an open and free logic textbook</em>, 2022.</p>
+      </li>
+      <li>
+        <p class="pub-title">Af aðferð Chomskys og vinnubrögðum Guðna Elíssonar</p>
+        <p class="pub-meta">In <em>Ritið: tímarit Hugvísindastofnunar</em>, 2017.</p>
+      </li>
+    </ul>
+  </section>
+<!-- /SECTION:other_publications -->
+
+<!-- SECTION:teaching --><!-- /SECTION:teaching -->
+
+<!-- SECTION:talks --><!-- /SECTION:talks -->
+
+<!-- SECTION:grants -->
+  <section>
+    <h2>Grants &amp; Awards</h2>
+    <ul class="cv-list">
+      <li>
+        <span class="cv-year">2022-2025</span>
+        <div class="cv-body">
+          <p class="cv-role">Postdoctoral Research Grant from the <em>Icelandic Research Fund</em></p>
+        </div>
+      </li>
+      <li>
+        <span class="cv-year">2016-2019</span>
+        <div class="cv-body">
+          <p class="cv-role">Early Stage Research Fellowship with the Marie Skłodowska-Curie European Training Network DIAPHORA</p>
+        </div>
+      </li>
+    </ul>
+  </section>
+<!-- /SECTION:grants -->
+
+<!-- SECTION:refereeing -->
+  <section>
+    <h2>Refereeing</h2>
+    <ul class="cv-list">
+      <li>
+        <span class="cv-year"></span>
+        <div class="cv-body"><p class="cv-detail"><em>Anthem</em>, <em>Erkenntnis</em>, <em>Philosophical Investigations</em>, <em>Philosophical Quarterly</em>, <em>Synthese</em>, <em>Measure</em>, <em>Philosophia</em>, <em>Philosophical Inquiries</em></p></div>
+      </li>
+    </ul>
+  </section>
+<!-- /SECTION:refereeing -->
+
+  <footer>
+    <p>Last updated March 2026</p>
+  </footer>
+
+</main>
+</body>
+</html>
