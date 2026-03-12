@@ -5,3 +5,5 @@ content/
 # files
 
 update_website.sh
+.DS_Store
+*/.DS_Store
