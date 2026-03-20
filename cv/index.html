@@ -150,7 +150,10 @@
     }
 
     .pub-list li {
-      padding: 0.9rem 0 0.9rem calc(7rem + 1.2rem);
+      display: grid;
+      grid-template-columns: 7rem 1fr;
+      gap: 0 1.2rem;
+      padding: 0.7rem 0;
       border-bottom: 1px solid var(--rule);
       font-size: 1rem;
       line-height: 1.55;
@@ -283,41 +286,68 @@
     <ul class="pub-list">
 <!-- PUBLICATIONS -->
       <li>
-        <p class="pub-title">What Is It to Follow a Rule?</p>
-        <p class="pub-meta"><em>Philosophical Inquiries</em>, forthcoming.</p>
+        <span class="cv-year"></span>
+        <div class="cv-body">
+          <p class="pub-title">What Is It to Follow a Rule?</p>
+          <p class="pub-meta"><em>Philosophical Inquiries</em>, forthcoming.</p>
+        </div>
       </li>
       <li>
-        <p class="pub-title">An Objective Communitarian Account of Semantic Content</p>
-        <p class="pub-meta"><em>Ergo</em>, forthcoming.</p>
+        <span class="cv-year"></span>
+        <div class="cv-body">
+          <p class="pub-title">An Objective Communitarian Account of Semantic Content</p>
+          <p class="pub-meta"><em>Ergo</em>, forthcoming.</p>
+        </div>
       </li>
       <li>
-        <p class="pub-title">The Philosophical Prospects of Large Language Models in the Future of Mathematics</p>
-        <p class="pub-meta">With Fenner Stanley Tanswell.</p>
-        <p class="pub-meta"><em>Annals of Mathematics and Philosophy</em>, forthcoming.</p>
+        <span class="cv-year"></span>
+        <div class="cv-body">
+          <p class="pub-title">The Philosophical Prospects of Large Language Models in the Future of Mathematics</p>
+          <p class="pub-meta">With Fenner Stanley Tanswell.</p>
+          <p class="pub-meta"><em>Annals of Mathematics and Philosophy</em>, forthcoming.</p>
+        </div>
       </li>
       <li>
-        <p class="pub-title">How the Laws of Logic Lie about Mathematical Objects</p>
-        <p class="pub-meta"><em>Synthese</em>, 2025, vol. 206, no. 201.</p>
+        <span class="cv-year">2025</span>
+        <div class="cv-body">
+          <p class="pub-title">How the Laws of Logic Lie about Mathematical Objects</p>
+          <p class="pub-meta"><em>Synthese</em>, vol. 206, no. 201.</p>
+        </div>
       </li>
       <li>
-        <p class="pub-title">Problems for 'Standard' Dispositionalist Accounts of Semantic Content</p>
-        <p class="pub-meta"><em>Synthese</em>, 2025, vol. 205, no. 2.</p>
+        <span class="cv-year">2025</span>
+        <div class="cv-body">
+          <p class="pub-title">Problems for 'Standard' Dispositionalist Accounts of Semantic Content</p>
+          <p class="pub-meta"><em>Synthese</em>, vol. 205, no. 2.</p>
+        </div>
       </li>
       <li>
-        <p class="pub-title">Wittgenstein on Mathematical Facts</p>
-        <p class="pub-meta"><em>Philosophical Investigations</em>, 2024.</p>
+        <span class="cv-year">2024</span>
+        <div class="cv-body">
+          <p class="pub-title">Wittgenstein on Mathematical Facts</p>
+          <p class="pub-meta"><em>Philosophical Investigations</em>.</p>
+        </div>
       </li>
       <li>
-        <p class="pub-title">Was Wittgenstein a Radical Conventionalist?</p>
-        <p class="pub-meta"><em>Synthese</em>, 2024, vol. 203, no. 37.</p>
+        <span class="cv-year">2024</span>
+        <div class="cv-body">
+          <p class="pub-title">Was Wittgenstein a Radical Conventionalist?</p>
+          <p class="pub-meta"><em>Synthese</em>, vol. 203, no. 37.</p>
+        </div>
       </li>
       <li>
-        <p class="pub-title">Rules as Constitutive Practices Defined by Correlated Equilibria</p>
-        <p class="pub-meta"><em>Inquiry</em>, 2022, vol. 65, pp. 1–35.</p>
+        <span class="cv-year">2022</span>
+        <div class="cv-body">
+          <p class="pub-title">Rules as Constitutive Practices Defined by Correlated Equilibria</p>
+          <p class="pub-meta"><em>Inquiry</em>, vol. 65, pp. 1–35.</p>
+        </div>
       </li>
       <li>
-        <p class="pub-title">Contradictions and Falling Bridges: What Was Wittgenstein's Reply to Turing?</p>
-        <p class="pub-meta"><em>British Journal for History of Philosophy</em>, 2021, vol. 29, no. 3, pp. 537–559.</p>
+        <span class="cv-year">2021</span>
+        <div class="cv-body">
+          <p class="pub-title">Contradictions and Falling Bridges: What Was Wittgenstein's Reply to Turing?</p>
+          <p class="pub-meta"><em>British Journal for History of Philosophy</em>, vol. 29, no. 3, pp. 537–559.</p>
+        </div>
       </li>
 <!-- /PUBLICATIONS -->
     </ul>
